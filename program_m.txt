@@ -1,0 +1,16 @@
+MOVAM 11
+MOVBM 12
+SUB
+MOVM 10
+HALT
+
+
+
+
+
+
+
+
+
+08
+05

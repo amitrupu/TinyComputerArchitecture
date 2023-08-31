@@ -1,0 +1,13 @@
+/NOP/		{ print "00" }
+/MOVA\>/	{ print "01\n"$2 }
+/MOVB\>/	{ print "02\n"$2 }
+/MOVAM/		{ print "03\n"$2 }
+/MOVBM/		{ print "04\n"$2 }
+/MOVM/		{ print "05\n"$2 }
+/ADD/		{ print "06" }
+/SUB/		{ print "07" }
+/MULT/		{ print "08" }
+/DIV/		{ print "09" }
+/HALT/		{ print "0a" }
+/^[0-9a-f]+$/	{ print $1 }
+/^$/		{ print "xx" }

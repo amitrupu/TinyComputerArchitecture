@@ -1,0 +1,37 @@
+[*]
+[*] GTKWave Analyzer v3.3.70 (w)1999-2016 BSI
+[*] Fri Jul 21 14:53:00 2023
+[*]
+[dumpfile] "/remote/sdg_fpga_rnd_01/amitroy/UnitTestsOut/sample_cpu_memory/out/verilog.dump"
+[dumpfile_mtime] "Fri Jul 21 14:48:32 2023"
+[dumpfile_size] 2671
+[savefile] "/remote/sdg_fpga_src/amitroy/UnitTests/Rtl/sample_cpu_memory/signals.gtkw"
+[timestart] 0
+[size] 1000 600
+[pos] 24 235
+*-5.124627 45 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tb.
+[sst_width] 214
+[signals_width] 118
+[sst_expanded] 1
+[sst_vpaned_height] 154
+@28
+tb.clk
+tb.rst
+@23
+tb.cpu_inst.addr[7:0]
+@22
+tb.rdata[7:0]
+tb.wdata[7:0]
+@28
+tb.write
+@22
+tb.cpu_inst.state[31:0]
+tb.cpu_inst.pc[7:0]
+@28
+tb.cpu_inst.op_a
+@22
+tb.cpu_inst.a[7:0]
+tb.cpu_inst.b[7:0]
+[pattern_trace] 1
+[pattern_trace] 0

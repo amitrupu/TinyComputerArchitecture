@@ -1,0 +1,20 @@
+program=program
+
+run: memin.hex memout.hex
+	@-diff -y --suppress-common-lines $^
+
+waveform: verilog.dump signals.gtkw 
+	gtkwave $^
+
+debug: simv mem.hex
+	simv -verdi
+
+verilog.dump memin.hex memout.hex: simv mem.hex
+	simv
+
+mem.hex: opcode2hex.awk $(program).txt
+	@awk -f $^ > $@
+
+simv: src/sv/*.sv
+	vcs -full64 -sverilog $^ -kdb -debug_access+all
+

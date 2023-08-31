@@ -1,0 +1,14 @@
+program=program
+
+run: memin.hex memout.hex
+	@-diff -y --suppress-common-lines $^
+
+waveform: veriwell.dmp signals.gtkw 
+	gtkwave $^
+
+veriwell.dmp memin.hex memout.hex: src/v/*.v mem.hex
+	veriwell +incdir+src/v src/v/*.v
+
+mem.hex: opcode2hex.awk $(program).txt
+	@awk -f $^ > $@
+
