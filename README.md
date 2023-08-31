@@ -1,9 +1,15 @@
 # TinyComputerArchitecture
 Tiny computer architecture having CPU and memory written in Verilog
+#### Author: Amit Roy (amitrupu@gmail.com)
 
-For free Verilog-95 simulator, download and build Veriwell from https://sourceforge.net/projects/veriwell/
-RTL source is in Verilog-95 inside src/v directory
-For simulation, run: make program=<program_suffix> out=<suffix>
+RTL source is in:
+- src/v directory for Verilog-95
+- src/sv directory for System Verilog
 
-For VCS simulation, run: make compile=sim
-RTL source is in SystemVerilog inside src/sv directory
+For Verilog-95 simulation with free Verilog simulator:
+- Download and build Veriwell from <code>https://sourceforge.net/projects/veriwell</code>
+- Run: <code>make program=<program_suffix> out=\<suffix></code>
+
+For System Verilog simulation with Synopsys VCS run: <code>make compile=sim</code>
+
+
