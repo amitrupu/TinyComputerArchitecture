@@ -11,6 +11,7 @@ For Verilog-95 simulation with free Verilog simulator:
 - Run: <code>make program=<program_suffix> out=\<suffix></code>
 
 For System Verilog simulation with Synopsys VCS, run: <code>make compile=sim</code>
+
 To simulate using Icarus Verilog, run: <code>make compile=sim.iverilog</code>
 
 
