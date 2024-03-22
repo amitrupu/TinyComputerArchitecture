@@ -14,4 +14,6 @@ For System Verilog simulation with Synopsys VCS, run: <code>make compile=sim</co
 
 To simulate using Icarus Verilog, run: <code>make compile=sim.iverilog</code>
 
+EDA Playground project: <code>https://www.edaplayground.com/x/QMi5</code>
+
 
